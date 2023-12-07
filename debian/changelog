@@ -1,5 +1,59 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-xiang90-probing (0.0.2-2) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + golang-github-xiang90-probing-dev: Add Multi-Arch: foreign.
+  * Remove constraints unnecessary since buster
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Tue, 29 Nov 2022 15:49:40 +0000
+
+golang-github-xiang90-probing (0.0.2-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Anthony Fok ]
+  * New upstream version 0.0.2:
+     - Fix HTTP status code error reporting
+  * Apply "cme fix dpkg" fixes:
+     - Bump Standards-Versions to 4.3.0 (no change);
+     - Change Priority to optional;
+     - Update debhelper dependency to (>= 12~), etc.
+  * Remove "uupdate" from debian/watch
+  * Update Maintainer email address to team+pkg-go@tracker.debian.org
+
+ -- Anthony Fok <foka@debian.org>  Fri, 18 Jan 2019 00:05:00 -0700
+
+golang-github-xiang90-probing (0.0.1-1) unstable; urgency=medium
+
+  * New upstream release (identical to 0.0~git20160813.0.07dd2e8).
+  * Add debian/watch
+  * Build-Depends on golang-any instead of golang-go, and remove
+    unnecessary "Depends: golang-go" and Build-Using from -dev package
+  * Add XS-Go-Import-Path field
+    and remove the corresponding DH_GOPKG variable in debian/rules
+  * Make package description slightly more informative
+  * Use debhelper (>= 10)
+  * Bump Standards-Version to 4.0.0:
+    Use https form of the copyright-format URL in debian/copyright
+  * Add "Testsuite: autopkgtest-pkg-go" to debian/control
+  * Add myself to the list of Uploaders
+
+ -- Anthony Fok <foka@debian.org>  Tue, 01 Aug 2017 10:40:01 -0600
+
+golang-github-xiang90-probing (0.0~git20160813.0.07dd2e8-1) unstable; urgency=medium
+
+  [ Paul Tagliamonte ]
+  * Team upload.
+  * Use a secure transport for the Vcs-Git and Vcs-Browser URL
+
+  [ Tim Potter ]
+  * New upstream snapshot.
+  * Standards-Version: 3.9.8
+
+ -- Tim Potter <tpot@hpe.com>  Wed, 08 Feb 2017 21:39:00 +1100
+
+golang-github-xiang90-probing (0.0~git20150806.0.6a0cc1a-1) unstable; urgency=medium
+
+  * Initial release (Closes: #818941).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Tue, 22 Mar 2016 10:46:25 +1100
